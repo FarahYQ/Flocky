@@ -5,10 +5,10 @@ Simulation of flocking behavior
 This application mimics the flocking behavior of birds using 3 primary parameters: Cohesion, Alignment, and Separation. This objects start at random positions in the air and will slowly flock to each other. 
 ![Alt Text](https://s3-us-west-1.amazonaws.com/flocky-gifs/Flocky.gif)
 
-#### Tools
+### Tools
 Flocky was build using pure JavaScript and HTML Canvas.
 
-#### How Does It Work? 
+### How Does It Work? 
 Cohesion: Each bird moves towards the average position of other nearby birds.
 ```
       let deltaPos = [center[0] - this.pos[0], center[1] - this.pos[1]];
@@ -23,6 +23,6 @@ Cohesion: Each bird moves towards the average position of other nearby birds.
 Alignment: Each bird changes their position in the direction of the alignment of nearby birds.
 Separation: Each bird tries to maintain an certain distance between itself and other birds to prevent overcrowding.
 
-#### Future Features:
+### Future Features:
 - Perfect flocking simulation
 - Create "Add Plane" feature for more interactivity that will cause birds to move in order to avoid collision
