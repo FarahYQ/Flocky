@@ -18,7 +18,7 @@ Cohesion: Each bird moves towards the average position of other nearby birds.
 
       this.vel[0] += deltaPos[0] * cohesionParam;
       this.vel[1] += deltaPos[1] * cohesionParam;
-     ```
+```
      
 Alignment: Each bird changes their position in the direction of the alignment of nearby birds.
 Separation: Each bird tries to maintain an certain distance between itself and other birds to prevent overcrowding.
