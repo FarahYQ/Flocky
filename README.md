@@ -22,5 +22,6 @@ Alignment: Each bird changes their position in the direction of the alignment of
 Separation: Each bird tries to maintain an certain distance between itself and other birds to prevent overcrowding.
 
 ### Future Features:
-[] Update calculations for more accurate flocking.
-[] Create "Add Plane" feature for more interactivity that will cause birds to move in order to avoid collision.
+- [ ] Update calculations for more accurate flocking.
+- [ ] Create "Add Plane" feature for more interactivity that will cause birds to move in order to avoid collision.
+- [ ] Add sprites for better visualization
