@@ -193,7 +193,6 @@ var mouse = { x: undefined, y: undefined};
 window.addEventListener('click', function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
-  debugger
 
   if (flock.birds.length < flock.birdCount) {
     flock.buildFlock();
