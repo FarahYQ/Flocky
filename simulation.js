@@ -86,16 +86,16 @@ function Bird(parameters, flock) {
 
   this.updatePos = function (c) {
     let mag = Math.sqrt(this.vel[0]*this.vel[0] + this.vel[1]*this.vel[1]);
-
+    const outterRegion = 20;
     if (mag > this.flock.velocity) {
       this.vel[0] = this.vel[0] * (mag * this.flock.velocity);
       this.vel[1] = this.vel[1] * (mag * this.flock.velocity);
     }
 
-    if (this.pos[0] + 5 > window.innerWidth || this.pos[0] - 5 < 0) {
+    if (this.pos[0] + outterRegion > window.innerWidth || this.pos[0] - outterRegion < 0) {
       this.vel[0] = - this.vel[0];
     }
-    if (this.pos[1] + 5 > window.innerHeight || this.pos[1] + 5 < 0) {
+    if (this.pos[1] + outterRegion > window.innerHeight || this.pos[1] + outterRegion < 0) {
       this.vel[1] = - this.vel[1];
     }
 
